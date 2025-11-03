@@ -9,6 +9,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_map: ^5.0.0
+  latlong2: ^0.9.1
+
+
+
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +25,7 @@ flutter:
   assets:
      - assets/HomePictures/
      - assets/OpeningPictures/
+     - assets/VerificationPicture/
+     - assets/SearchPictures/
+     - assets/CommunityPictures/
+

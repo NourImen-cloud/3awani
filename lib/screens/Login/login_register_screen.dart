@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/screens/Verification/OTPverification.dart' ;
 
 class LoginRegisterScreen extends StatefulWidget {
   const LoginRegisterScreen({super.key});
@@ -338,7 +339,11 @@ class _LoginRegisterScreenState extends State<LoginRegisterScreen> {
 
         const SizedBox(height: 20),
         ElevatedButton(
-          onPressed: () {},
+         onPressed: () {
+                             Navigator.push( context,
+                             MaterialPageRoute(builder: (context) => OTPVerificationScreen()),
+                             );
+                             },
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color(0xFF0A7A6E),
             minimumSize: const Size(double.infinity, 55),
@@ -494,7 +499,11 @@ class _LoginRegisterScreenState extends State<LoginRegisterScreen> {
         ],
         const SizedBox(height: 20),
         ElevatedButton(
-          onPressed: () {},
+             onPressed: () {
+                             Navigator.push( context,
+                             MaterialPageRoute(builder: (context) => OTPVerificationScreen()),
+                             );
+                             },
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color(0xFF0A7A6E),
             minimumSize: const Size(double.infinity, 55),
