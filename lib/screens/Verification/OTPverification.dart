@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:project/screens/home/home_page.dart';
 
 class OTPVerificationScreen extends StatefulWidget {
   const OTPVerificationScreen({Key? key}) : super(key: key);
@@ -45,9 +46,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
     String otp = _controllers.map((c) => c.text).join();
     if (otp.length == 4) {
       // Handle OTP verification
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Verifying OTP: $otp')),
-      );
+      Navigator.of(context).push(MaterialPageRoute(builder:(context)=>HomePage()));
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Please enter complete OTP')),
