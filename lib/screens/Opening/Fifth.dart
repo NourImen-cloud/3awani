@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/screens/Login/login_register_screen.dart' ;
 
 class FifthScreen extends StatelessWidget {
   const FifthScreen({Key? key}) : super(key: key);
@@ -64,9 +65,11 @@ class FifthScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                       ),
-                      onPressed: () {
-                        // TODO: Navigate to login
-                      },
+                    onPressed: () {
+                             Navigator.push( context,
+                             MaterialPageRoute(builder: (context) => const LoginRegisterScreen()),
+                             );
+                             },
                       child: const Text(
                         'تسجيل الدخول',
                         textDirection: TextDirection.rtl,
@@ -89,9 +92,11 @@ class FifthScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                       ),
-                      onPressed: () {
-                        // TODO: Navigate to register
-                      },
+                     onPressed: () {
+                     Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) =>  LoginRegisterScreen()),
+                                                                   );
+                     },
                       child: const Text(
                         'فتح حساب',
                         textDirection: TextDirection.rtl,
