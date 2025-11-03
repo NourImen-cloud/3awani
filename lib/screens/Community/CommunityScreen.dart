@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/screens/home/home_bottom_bar.dart';
 
 class CommunityFeedScreen extends StatefulWidget {
   const CommunityFeedScreen({Key? key}) : super(key: key);
@@ -105,61 +106,7 @@ class _CommunityFeedScreenState extends State<CommunityFeedScreen> {
           ),
         ],
       ),
-      bottomNavigationBar: Container(
-        height: 81,
-          color: const Color(0xFFE2E9E9), 
-        child: BottomNavigationBar(
-          backgroundColor: const Color(0xFFE2E9E9),
-          elevation: 0,
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          items: [
-            BottomNavigationBarItem(
-              icon: Padding(
-                padding: const EdgeInsets.only(top: 8),
-                child: Image.asset(
-                  "assets/SearchPictures/Home-1.png",
-                  width: 28,
-                  height: 27,
-                ),
-              ),
-              label: "home",
-            ),
-            BottomNavigationBarItem(
-              icon: Padding(
-                padding: const EdgeInsets.only(top: 8, right: 22),
-                child: Image.asset(
-                  "assets/SearchPictures/list-search.png",
-                  width: 26,
-                  height: 29,
-                ),
-              ),
-              label: "searchUsers",
-            ),
-            BottomNavigationBarItem(
-              icon: Padding(
-                padding: const EdgeInsets.only(top: 8),
-                child: Image.asset(
-                  "assets/SearchPictures/Users-4.png",
-                  width: 24,
-                  height: 24,
-                ),
-              ),
-              label: "Users",
-            ),
-            BottomNavigationBarItem(
-              icon: Padding(
-                padding: const EdgeInsets.only(top: 8),
-                child: Image.asset(
-                  "assets/SearchPictures/Setting.png",
-                  width: 24,
-                  height: 24,
-                ),
-              ),
-              label: "Settings",
-            ),
-          ],
-        ),),
+      bottomNavigationBar: HomeBottomBar(),
     );
   }
 }

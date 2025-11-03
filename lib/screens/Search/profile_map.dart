@@ -13,6 +13,7 @@ class _MapAndProfilesScreenState extends State<MapAndProfilesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       backgroundColor: Colors.transparent,
       extendBodyBehindAppBar: true,
       appBar: PreferredSize(
